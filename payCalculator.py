@@ -4,9 +4,12 @@ def calculatePay():
     # This first line is provided for you
     hrs = float(input("Enter Hours: "))
     hpay = float(input("Hourly Wage?: "))
-              
-    gpay =hrs*hpay
-    print (str(gpay))
+    if hrs > 40 :
+        gpay =hrs*hpay + (hrs-40)*(0.5*hpay)
+        print (str(gpay))
+    else:
+         gpay =hrs*hpay
+         print (str(gpay))
     # end assignment
 
 ## if you want to test locally before you try to sync
