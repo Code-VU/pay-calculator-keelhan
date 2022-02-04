@@ -4,6 +4,7 @@ def calculatePay():
     # This first line is provided for you
     hrs = float(input("Enter Hours: "))
     hpay = float(input("Hourly Wage?: "))
+              
     gpay =hrs*hpay
     print (str(gpay))
     # end assignment
